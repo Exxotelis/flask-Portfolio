@@ -8,7 +8,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   overflow-x: hidden;
-  background-color: #eeeeee;
+  background-color: #353838;
   color: #6C6D6E;
 }
 
@@ -40,6 +40,7 @@ p {
 }
 
 .tm-section {
+	
   margin-bottom: 155px;
   position: relative;
 }
@@ -390,4 +391,9 @@ figcaption {
 
 .social-icons a:hover img {
     opacity: 0.7; /* Add a hover effect to the icons */
+}
+.social-icons {
+  position: absolute;
+  right: -90px;
+  top: -60px;
 }
