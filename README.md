@@ -22,7 +22,7 @@ This is a portfolio website built using Flask, a Python web framework. The websi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/flask-portfolio.git
+   git clone https://github.com/exxotelis/flask-portfolio.git
 Install dependencies:
 
 bash
@@ -48,12 +48,12 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Contact
-For any inquiries or feedback, feel free to contact me at your-email@example.com.
+For any inquiries or feedback, feel free to contact me at exxotelis@gmail.com.com.
 
 vbnet
 Copy code
 
-Feel free to customize the content as needed to better reflect your website and project details. Let me know if you need further assistance!
+
 
 
 
