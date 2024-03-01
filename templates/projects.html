@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exxotelis | Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+</head>
+
+<body>
+    <div class="tm-page-container mx-auto">
+        <header class="tm-header text-center">
+            <h1 class="tm-title text-uppercase">Exxotelis</h1>
+            <p class="tm-primary-color"><i>Welcome to my Portfolio website.</i></p>
+        </header>
+
+        <div class="tm-section">
+            <nav class="tm-nav">
+                <ul>
+                    <li><a href="{{ url_for('index') }}"><span class="tm-nav-deco"></span>Intro</a></li>
+                    <li><a href="{{ url_for('gallery') }}"><span class="tm-nav-deco"></span>Gallery</a></li>
+                    <li><a href="{{ url_for('projects') }}"><span class="tm-nav-deco"></span>Projects</a></li>
+                    <li><a href="{{ url_for('contact') }}"><span class="tm-nav-deco"></span>Contact</a></li>
+                </ul>
+            </nav>
+            <p>Explore the projects showcased below. Click on any project to view more details and images.</p>
+            <p>Check out the GitHub repository for each project by clicking the link below.</p>
+            <a href="https://github.com/Exxotelis" class="tm-btn tm-btn-primary">View on Github</a>
+                    <div class="container-fluid">
+                        <div class="row tm-gallery" id="tmGallery">
+                            {% for i in range(1, 21) %}
+                                <div class="col-sm-6 tm-gallery-item">
+                                    <figure class="effect-bubba">
+                                        <img src="{{ url_for('static', filename='images/' + i|string + '.png') }}"
+                                            alt="Project {{ i }}" class="img-fluid">
+                                        <figcaption>
+                                            <h2>Exxotelis <span>Projects</span></h2>
+                                            <p>A brief description of the project.</p>
+                                            <a href="{{ url_for('static', filename='images/' + i|string + '.png') }}">View
+                                                more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            {% endfor %}
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span>Copyright 2024 Exxotelis</span>
+            <span>designed by Exxotelis</span>
+        </footer>
+    </div>
+</body>
+
+</html>
